@@ -8,9 +8,14 @@
     <link href="app.css" rel="stylesheet">
 </head>
 <body>
+    <h1>Movie Rating List:</h1>
     <form>
-        <input type="text" placeholder="Insert Movie Name">
-        <input type="range" min="0" max="10" list="markers">
+        <label for='title'>Movie Title:
+            <input type='text' id='title' placeholder='Movie Title'>
+        </label>
+        <label for='rating'>Rating:
+            <input type='range' id='rating' min='0' max='10' list='markers'>
+        </label>
 
         <datalist id="markers">
             <option value="0" label="0"></option>
@@ -26,10 +31,8 @@
             <option value="10" label="10"></option>
           </datalist>
 
-          
-        <button>Submit!</button>
+          <button>Submit!</button>
     </form>
-    
 </body>
 <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 <script src="app.js"></script>
